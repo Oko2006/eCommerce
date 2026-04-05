@@ -1,6 +1,21 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
+CITIES=[
+    ('amman', 'Amman'),
+    ('zarqa', 'Zarqa'),
+    ('irbid', 'Irbid'),
+    ('aqaba', 'Aqaba'),
+    ('madaba', 'Madaba'),
+    ('karak', 'Karak'),
+    ('mafraq', 'Mafraq'),
+    ('ajloun', 'Ajloun'),
+    ('balqa', 'Balqa'),
+    ('maan', 'Maan'),
+    ('jerash', 'Jerash'),
+    
+]
+
 class User(AbstractUser):
     phone_number = models.CharField(max_length=20, blank=True)
 
@@ -11,7 +26,7 @@ class User(AbstractUser):
 class Address(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='addresses')
     street = models.CharField(max_length=255)
-    city = models.CharField(max_length=100)
+    city = models.CharField(max_length=20,choices=CITIES)
     state = models.CharField(max_length=100)
     postal_code = models.CharField(max_length=20)
     country = models.CharField(max_length=100)
