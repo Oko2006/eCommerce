@@ -90,4 +90,4 @@ Full examples are in [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md).
 
 ## License
 
-Use this project as a learning and portfolio base. Add your preferred license before public distribution.
+This project is licensed under the MIT License - see the LICENSE file for details.
