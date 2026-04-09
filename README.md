@@ -87,7 +87,6 @@ Full examples are in [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md).
 ## Documentation
 
 - API details: [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md)
-- LinkedIn launch guide: [docs/LINKEDIN_POST_GUIDE.md](docs/LINKEDIN_POST_GUIDE.md)
 
 ## License
 
